@@ -1,0 +1,11 @@
+-- STARTGAME Loader
+local BASE_URL = "https://raw.githubusercontent.com/NMKEN/STARTGAME/main/"
+
+local function load(path)
+    local src = game:HttpGet(BASE_URL .. path)
+    return loadstring(src)()
+end
+
+load("scripts/utils.lua")
+
+print("STARTGAME Loaded")
