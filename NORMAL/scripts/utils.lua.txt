@@ -79,7 +79,7 @@ local function FarmZombie()
         end
 
         -- ✔ เจอมอน → บินเข้าไปใกล้
-        warpTo(zRoot.Position + Vector3.new(0, -, 0))
+        warpTo(zRoot.Position + Vector3.new(0, -10, 0))
 
         -- เช็คว่ามอนหายไป (ตาย / despawn)
         if not ZOMBIE_FOLDER:FindFirstChild("1") then
